@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+/* 
+
+cor de fundo -> #201c2b
+cor de fundo contrastada -> #6441A4
+cor de texto padrao -> e5e3e8
+cor para links -> #e2dbf0
+cor para overlays de texto -> #e5e3e8
+
+*/
+
+body { /* AQUI EU COLOCO AS FONTES, A COR DO FUNDO, MARGEM E PADDING*/
+  font-family: 'Lato', Arial, sans-serif;
+  color: #e5e3e8;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(245, 241, 241));}
+
+header { /* ESSE EH O "WHO IS ICARUS" */
+  height: 90px; 
+  color: #000000;
+  width: 100%;
+}
+
+header nav { /* ISSO EH A CAIXA CINZA DO CABEÇALHO*/
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+}
+
+header nav ul { /* SOBRE MIM E PROJETOS*/
+  list-style: none; /* remove os marcadores de lista */ 
+  display: flex;
+  margin: 0 auto;
+}
+
+header nav ul li { /* DISTANCIA ENTRE SOBRE MIM E PROJETOS*/
+  margin: 10px;
+}
+
+header nav ul li a {
+  color: #000000;
+  text-decoration: none; /* remove o sublinhado */
+  font-size: 18px;
+  transition: all 1.0s ease-in-out;
+}
+
+header nav ul li a:hover { /* qnd o mouse passar por cima, faça isso: */ 
+  color: #6441A4;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  border-radius: 2px;
+}
+
+header h1 { /* propriedades do "who is icarus" */
+  color: #000000;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.5;
+  transition: all 1.0s ease-in-out;
+}
+
+header h1:hover{ /* oq acontece quando se passa o mouse por cima do titulo*/
+  color: #6441A4;
+  font-size: 38px;
+}
+
+main { /* corpo principal */ 
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #0d0d0d;
+  box-shadow: 0px 2px 5px 0px rgb(253, 253, 253);
+}
+
+#education h3{
+  color: rgb(75, 47, 116);
+}
+
+#education a {
+  color: #e5e3e8;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#education a:hover {
+  font-size: 18px;
+  color: #555;
+  background-color: white;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+#social-nav a {
+  color: #e2dbf0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#social-nav a:hover {
+  font-size: 18px;
+  color: #555;
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+#projects a {
+  color: #e5e3e8;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects a:hover{
+  font-size: 18px;
+  color: #555;
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+/* Add animation to the header when scrolling */
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+input[type=text], select, textarea {
+  font-family: Lato;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.forms {
+  border-radius: 5px;
+  background-color: #332153;
+  padding: 20px;
+}
